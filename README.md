@@ -7,12 +7,13 @@ I would like to express my deepest gratitude to Project F for sharing their exce
 [projf/display_controller: FPGA display controller with support for VGA, DVI, and HDMI. (github.com)](https://github.com/projf/display_controller/tree/master)
 
 ### Gameplay Video
-
+![Marios_Coin_Collection_Adventure-FPGA](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/c49682e9-8619-4702-9a29-0902202458fe)
 ### Overview
 
-  ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 320pixel, 세로 240pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d945751.png)    ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 172pixel, 세로 160pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d945752.png)    ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 236pixel, 세로 160pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d945757.png)  
-
-  ![그림입니다. 원본 그림의 이름: 그림1_changed_background.png 원본 그림의 크기: 가로 22pixel, 세로 32pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d94574b.png)    ![그림입니다. 원본 그림의 이름: 그림3_changed_background.png 원본 그림의 크기: 가로 27pixel, 세로 28pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d94574c.png)    ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 28pixel, 세로 32pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d94574d.png)    ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 28pixel, 세로 32pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d94574e.png)    ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 28pixel, 세로 32pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d94574f.png)    ![그림입니다. 원본 그림의 이름: changed_background.png 원본 그림의 크기: 가로 32pixel, 세로 32pixel](E:\works\hdl\mario_brothers-FPGA\README.assets\EMB00003d945750.png)  
+  ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/700845d0-4263-474e-8f18-9c6fab7cb0d4)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/77caaa52-9c34-401e-94cf-9df8cdac68e7)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/4b3d5d1d-32e9-481b-8d2c-af8d298b23a9)
+  
+  ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/a5c411a9-8baa-4089-93a7-d28a001a3604)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/a9059fc4-920e-4198-acc6-d8f4689bb201)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/019c2162-3a5e-45bb-88a8-edb54149ee0f)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/958dae9e-e603-4a90-8ff6-82e8aee71543)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/03b2e530-a376-4030-a00f-36db0704f620)    ![image](https://github.com/MiiKiyoshi/Marios_Coin_Collection_Adventure-FPGA/assets/121929511/7d1b9b3f-b09f-42d2-8bec-8f3cb43bcf1d)
+ 
 
 
 
