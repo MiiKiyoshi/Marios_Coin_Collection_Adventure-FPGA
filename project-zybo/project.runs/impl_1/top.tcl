@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "E:/works/verilog/kong/mario_brothers/project/project.runs/impl_1/top.tcl"
+  variable script "E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -126,21 +127,22 @@ set rc [catch {
   set_param runs.launchOptions { -jobs 4  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
+  set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir E:/works/verilog/kong/mario_brothers/project/project.cache/wt [current_project]
-  set_property parent.project_path E:/works/verilog/kong/mario_brothers/project/project.xpr [current_project]
-  set_property ip_output_repo E:/works/verilog/kong/mario_brothers/project/project.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/works/hdl/mario_brothers-FPGA/project-zybo/project.cache/wt [current_project]
+  set_property parent.project_path E:/works/hdl/mario_brothers-FPGA/project-zybo/project.xpr [current_project]
+  set_property ip_output_repo E:/works/hdl/mario_brothers-FPGA/project-zybo/project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/top.dcp
-  read_ip -quiet E:/works/verilog/kong/mario_brothers/project/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  add_files -quiet E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/top.dcp
+  read_ip -quiet E:/works/hdl/mario_brothers-FPGA/project-zybo/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc E:/works/verilog/kong/mario_brothers/top.xdc
+  read_xdc E:/works/hdl/mario_brothers-FPGA/top.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

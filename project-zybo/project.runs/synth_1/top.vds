@@ -3,21 +3,23 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Dec 21 12:37:25 2023
-# Process ID: 34948
-# Current directory: E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1
+# Start of session at: Sun Dec 24 19:47:24 2023
+# Process ID: 20008
+# Current directory: E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/top.vds
-# Journal file: E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1\vivado.jou
+# Log file: E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/top.vds
+# Journal file: E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1\vivado.jou
 # Running On: miikiyoshi, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 4, Host memory: 17128 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 459.195 ; gain = 199.199
-Command: read_checkpoint -auto_incremental -incremental E:/works/verilog/kong/mario_brothers/project/project.srcs/utils_1/imports/synth_1/top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from E:/works/verilog/kong/mario_brothers/project/project.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 458.062 ; gain = 197.457
+Command: read_checkpoint -auto_incremental -incremental E:/works/hdl/mario_brothers-FPGA/project-zybo/project.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/works/hdl/mario_brothers-FPGA/project-zybo/project.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7z010clg400-1
 Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:zybo:part0:2.0' and the board 'unset' used to customize the IP 'clk_wiz_0' do not match.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
@@ -25,57 +27,57 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5760
-INFO: [Synth 8-11241] undeclared symbol 'gravity_trig_always_on', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:192]
-WARNING: [Synth 8-11065] parameter 'RIGHT_END' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:21]
-WARNING: [Synth 8-11065] parameter 'BOTTOM_END' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:21]
-WARNING: [Synth 8-11065] parameter 'WIDTH' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:22]
-WARNING: [Synth 8-11065] parameter 'HEIGHT' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:22]
-WARNING: [Synth 8-11065] parameter 'MOVE_TO_LEFT' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:47]
-WARNING: [Synth 8-11065] parameter 'MOVE_TO_RIGHT' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:47]
-WARNING: [Synth 8-6901] identifier 'n_left' is used before its declaration [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:68]
-WARNING: [Synth 8-6901] identifier 'c_left' is used before its declaration [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:68]
-WARNING: [Synth 8-6901] identifier 'n_left' is used before its declaration [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:70]
-WARNING: [Synth 8-6901] identifier 'c_left' is used before its declaration [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:70]
-WARNING: [Synth 8-6901] identifier 'n_left' is used before its declaration [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:72]
-WARNING: [Synth 8-6901] identifier 'c_left' is used before its declaration [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:72]
-WARNING: [Synth 8-11065] parameter 'GROUND_STATE' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:101]
-WARNING: [Synth 8-11065] parameter 'GRAVITY_STATE' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:101]
-INFO: [Synth 8-11241] undeclared symbol 'not_play_rst', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario.v:23]
-INFO: [Synth 8-11241] undeclared symbol 'game_over', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario.v:110]
-INFO: [Synth 8-11241] undeclared symbol 'ending', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario.v:111]
-INFO: [Synth 8-11241] undeclared symbol 'game_st', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario.v:116]
-WARNING: [Synth 8-8895] 'game_st' is already implicitly declared on line 116 [E:/works/verilog/kong/mario_brothers/mario/mario.v:123]
-WARNING: [Synth 8-8895] 'game_over' is already implicitly declared on line 110 [E:/works/verilog/kong/mario_brothers/mario/mario.v:133]
-WARNING: [Synth 8-8895] 'ending' is already implicitly declared on line 111 [E:/works/verilog/kong/mario_brothers/mario/mario.v:133]
-INFO: [Synth 8-11241] undeclared symbol 'ending_real_on', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario.v:150]
-INFO: [Synth 8-11241] undeclared symbol 'jump_trig_always_on', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:155]
-INFO: [Synth 8-11241] undeclared symbol 'gravity_trig_always_on', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:224]
-INFO: [Synth 8-11241] undeclared symbol 'x_rom', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:287]
-INFO: [Synth 8-11241] undeclared symbol 'y_rom', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:288]
-WARNING: [Synth 8-8895] 'x_rom' is already implicitly declared on line 287 [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:365]
-WARNING: [Synth 8-8895] 'y_rom' is already implicitly declared on line 288 [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:378]
-INFO: [Synth 8-11241] undeclared symbol 'hit', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/text_display.v:24]
-INFO: [Synth 8-11241] undeclared symbol 'ending_0', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/mario/text_display.v:96]
-WARNING: [Synth 8-8895] 'ending_0' is already implicitly declared on line 96 [E:/works/verilog/kong/mario_brothers/mario/text_display.v:99]
-INFO: [Synth 8-11241] undeclared symbol 'hdmi_tx_rscl', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/top.v:63]
-INFO: [Synth 8-11241] undeclared symbol 'hdmi_tx_rsda', assumed default net type 'wire' [E:/works/verilog/kong/mario_brothers/top.v:64]
+INFO: [Synth 8-7075] Helper process launched with PID 8160
+INFO: [Synth 8-11241] undeclared symbol 'gravity_trig_always_on', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:192]
+WARNING: [Synth 8-11065] parameter 'RIGHT_END' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:21]
+WARNING: [Synth 8-11065] parameter 'BOTTOM_END' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:21]
+WARNING: [Synth 8-11065] parameter 'WIDTH' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:22]
+WARNING: [Synth 8-11065] parameter 'HEIGHT' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:22]
+WARNING: [Synth 8-11065] parameter 'MOVE_TO_LEFT' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:47]
+WARNING: [Synth 8-11065] parameter 'MOVE_TO_RIGHT' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:47]
+WARNING: [Synth 8-6901] identifier 'n_left' is used before its declaration [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:68]
+WARNING: [Synth 8-6901] identifier 'c_left' is used before its declaration [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:68]
+WARNING: [Synth 8-6901] identifier 'n_left' is used before its declaration [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:70]
+WARNING: [Synth 8-6901] identifier 'c_left' is used before its declaration [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:70]
+WARNING: [Synth 8-6901] identifier 'n_left' is used before its declaration [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:72]
+WARNING: [Synth 8-6901] identifier 'c_left' is used before its declaration [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:72]
+WARNING: [Synth 8-11065] parameter 'GROUND_STATE' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:101]
+WARNING: [Synth 8-11065] parameter 'GRAVITY_STATE' becomes localparam in 'goomba_display' with formal parameter declaration list [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:101]
+INFO: [Synth 8-11241] undeclared symbol 'not_play_rst', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'game_over', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:110]
+INFO: [Synth 8-11241] undeclared symbol 'ending', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:111]
+INFO: [Synth 8-11241] undeclared symbol 'game_st', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:116]
+WARNING: [Synth 8-8895] 'game_st' is already implicitly declared on line 116 [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:123]
+WARNING: [Synth 8-8895] 'game_over' is already implicitly declared on line 110 [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:133]
+WARNING: [Synth 8-8895] 'ending' is already implicitly declared on line 111 [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:133]
+INFO: [Synth 8-11241] undeclared symbol 'ending_real_on', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:150]
+INFO: [Synth 8-11241] undeclared symbol 'jump_trig_always_on', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:155]
+INFO: [Synth 8-11241] undeclared symbol 'gravity_trig_always_on', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:224]
+INFO: [Synth 8-11241] undeclared symbol 'x_rom', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:287]
+INFO: [Synth 8-11241] undeclared symbol 'y_rom', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:288]
+WARNING: [Synth 8-8895] 'x_rom' is already implicitly declared on line 287 [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:365]
+WARNING: [Synth 8-8895] 'y_rom' is already implicitly declared on line 288 [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:378]
+INFO: [Synth 8-11241] undeclared symbol 'hit', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:24]
+INFO: [Synth 8-11241] undeclared symbol 'ending_0', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:96]
+WARNING: [Synth 8-8895] 'ending_0' is already implicitly declared on line 96 [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:99]
+INFO: [Synth 8-11241] undeclared symbol 'hdmi_tx_rscl', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/top.v:63]
+INFO: [Synth 8-11241] undeclared symbol 'hdmi_tx_rsda', assumed default net type 'wire' [E:/works/hdl/mario_brothers-FPGA/top.v:64]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1308.492 ; gain = 432.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1307.398 ; gain = 433.098
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [E:/works/verilog/kong/mario_brothers/top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/.Xil/Vivado-34948-miikiyoshi/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/.Xil/Vivado-34948-miikiyoshi/realtime/clk_wiz_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'clk_out2' of module 'clk_wiz_0' is unconnected for instance 'clk_inst' [E:/works/verilog/kong/mario_brothers/top.v:27]
-WARNING: [Synth 8-7023] instance 'clk_inst' of module 'clk_wiz_0' has 5 connections declared, but only 4 given [E:/works/verilog/kong/mario_brothers/top.v:27]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [E:/works/verilog/kong/mario_brothers/debounce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/works/hdl/mario_brothers-FPGA/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/.Xil/Vivado-20008-miikiyoshi/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/.Xil/Vivado-20008-miikiyoshi/realtime/clk_wiz_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'clk_out2' of module 'clk_wiz_0' is unconnected for instance 'clk_inst' [E:/works/hdl/mario_brothers-FPGA/top.v:27]
+WARNING: [Synth 8-7023] instance 'clk_inst' of module 'clk_wiz_0' has 5 connections declared, but only 4 given [E:/works/hdl/mario_brothers-FPGA/top.v:27]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [E:/works/hdl/mario_brothers-FPGA/debounce.v:1]
 	Parameter BTN_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [E:/works/verilog/kong/mario_brothers/debounce.v:1]
-INFO: [Synth 8-6157] synthesizing module 'debounce__parameterized0' [E:/works/verilog/kong/mario_brothers/debounce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [E:/works/hdl/mario_brothers-FPGA/debounce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debounce__parameterized0' [E:/works/hdl/mario_brothers-FPGA/debounce.v:1]
 	Parameter BTN_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'debounce__parameterized0' (0#1) [E:/works/verilog/kong/mario_brothers/debounce.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dvi_top' [E:/works/verilog/kong/mario_brothers/hdmi/dvi_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'display_clocks' [E:/works/verilog/kong/mario_brothers/hdmi/display_clocks.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debounce__parameterized0' (0#1) [E:/works/hdl/mario_brothers-FPGA/debounce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dvi_top' [E:/works/hdl/mario_brothers-FPGA/hdmi/dvi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'display_clocks' [E:/works/hdl/mario_brothers-FPGA/hdmi/display_clocks.v:7]
 	Parameter MULT_MASTER bound to: 31.500000 - type: double 
 	Parameter DIV_MASTER bound to: 5 - type: integer 
 	Parameter DIV_5X bound to: 5.000000 - type: double 
@@ -114,8 +116,8 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [E:/tools/Xilinx/Vivado/2
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80431]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
-INFO: [Synth 8-6155] done synthesizing module 'display_clocks' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/display_clocks.v:1]
-INFO: [Synth 8-6157] synthesizing module 'display_timings' [E:/works/verilog/kong/mario_brothers/hdmi/display_timings.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'display_clocks' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/display_clocks.v:7]
+INFO: [Synth 8-6157] synthesizing module 'display_timings' [E:/works/hdl/mario_brothers-FPGA/hdmi/display_timings.v:7]
 	Parameter H_RES bound to: 640 - type: integer 
 	Parameter V_RES bound to: 480 - type: integer 
 	Parameter H_FP bound to: 16 - type: integer 
@@ -126,13 +128,13 @@ INFO: [Synth 8-6157] synthesizing module 'display_timings' [E:/works/verilog/kon
 	Parameter V_BP bound to: 33 - type: integer 
 	Parameter H_POL bound to: 0 - type: integer 
 	Parameter V_POL bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'display_timings' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/display_timings.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dvi_generator' [E:/works/verilog/kong/mario_brothers/hdmi/dvi_generator.v:1]
-INFO: [Synth 8-6157] synthesizing module 'tmds_encoder_dvi' [E:/works/verilog/kong/mario_brothers/hdmi/tmds_encoder_dvi.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'tmds_encoder_dvi' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/tmds_encoder_dvi.v:1]
-INFO: [Synth 8-6157] synthesizing module 'async_reset' [E:/works/verilog/kong/mario_brothers/hdmi/async_reset.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'async_reset' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/async_reset.v:1]
-INFO: [Synth 8-6157] synthesizing module 'serializer_10to1' [E:/works/verilog/kong/mario_brothers/hdmi/serializer_10to1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'display_timings' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/display_timings.v:7]
+INFO: [Synth 8-6157] synthesizing module 'dvi_generator' [E:/works/hdl/mario_brothers-FPGA/hdmi/dvi_generator.v:5]
+INFO: [Synth 8-6157] synthesizing module 'tmds_encoder_dvi' [E:/works/hdl/mario_brothers-FPGA/hdmi/tmds_encoder_dvi.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_encoder_dvi' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/tmds_encoder_dvi.v:5]
+INFO: [Synth 8-6157] synthesizing module 'async_reset' [E:/works/hdl/mario_brothers-FPGA/hdmi/async_reset.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'async_reset' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/async_reset.v:5]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10to1' [E:/works/hdl/mario_brothers-FPGA/hdmi/serializer_10to1.v:5]
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:95372]
 	Parameter DATA_RATE_OQ bound to: DDR - type: string 
 	Parameter DATA_RATE_TQ bound to: SDR - type: string 
@@ -159,96 +161,96 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [E:/tools/X
 	Parameter TBYTE_SRC bound to: FALSE - type: string 
 	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:95372]
-INFO: [Synth 8-6155] done synthesizing module 'serializer_10to1' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/serializer_10to1.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'dvi_generator' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/dvi_generator.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10to1' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/serializer_10to1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_generator' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/dvi_generator.v:5]
 INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91135]
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [E:/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91135]
-INFO: [Synth 8-6155] done synthesizing module 'dvi_top' (0#1) [E:/works/verilog/kong/mario_brothers/hdmi/dvi_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'mario_brothers' [E:/works/verilog/kong/mario_brothers/mario/mario.v:1]
-INFO: [Synth 8-6157] synthesizing module 'mario_display' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'mario_bar_ground' [E:/works/verilog/kong/mario_brothers/mario/mario_bar_ground.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mario_bar_ground' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario_bar_ground.v:1]
-INFO: [Synth 8-6157] synthesizing module 'size_varible_gen_counter_en' [E:/works/verilog/kong/mario_brothers/mario/size_varible_gen_count_en.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'size_varible_gen_counter_en' (0#1) [E:/works/verilog/kong/mario_brothers/mario/size_varible_gen_count_en.v:1]
-INFO: [Synth 8-6157] synthesizing module 'mario_rom_jumping' [E:/works/verilog/kong/mario_brothers/mario/mario_rom_jumping.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mario_rom_jumping' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario_rom_jumping.v:1]
-WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_jumping' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:287]
-INFO: [Synth 8-6157] synthesizing module 'mario_rom_walking1' [E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking1.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mario_rom_walking1' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking1.v:1]
-WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_walking1' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:294]
-INFO: [Synth 8-6157] synthesizing module 'mario_rom_walking2' [E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking2.v:1]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking2.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'mario_rom_walking2' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking2.v:1]
-WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_walking2' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:301]
-INFO: [Synth 8-6157] synthesizing module 'mario_rom_standing' [E:/works/verilog/kong/mario_brothers/mario/mario_rom_standing.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'mario_rom_standing' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario_rom_standing.v:1]
-WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_standing' [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:308]
-INFO: [Synth 8-6157] synthesizing module 'gen_counter_en' [E:/works/verilog/kong/mario_brothers/mario/gen_counter_en.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_top' (0#1) [E:/works/hdl/mario_brothers-FPGA/hdmi/dvi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mario_brothers' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mario_display' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mario_bar_ground' [E:/works/hdl/mario_brothers-FPGA/mario/mario_bar_ground.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mario_bar_ground' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario_bar_ground.v:1]
+INFO: [Synth 8-6157] synthesizing module 'size_varible_gen_counter_en' [E:/works/hdl/mario_brothers-FPGA/mario/size_varible_gen_count_en.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'size_varible_gen_counter_en' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/size_varible_gen_count_en.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mario_rom_jumping' [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_jumping.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mario_rom_jumping' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_jumping.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_jumping' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:287]
+INFO: [Synth 8-6157] synthesizing module 'mario_rom_walking1' [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mario_rom_walking1' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking1.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_walking1' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:294]
+INFO: [Synth 8-6157] synthesizing module 'mario_rom_walking2' [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking2.v:1]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking2.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'mario_rom_walking2' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking2.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_walking2' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:301]
+INFO: [Synth 8-6157] synthesizing module 'mario_rom_standing' [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_standing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mario_rom_standing' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_standing.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'x' does not match port width (5) of module 'mario_rom_standing' [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:308]
+INFO: [Synth 8-6157] synthesizing module 'gen_counter_en' [E:/works/hdl/mario_brothers-FPGA/mario/gen_counter_en.v:1]
 	Parameter SIZE bound to: 3000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_counter_en' (0#1) [E:/works/verilog/kong/mario_brothers/mario/gen_counter_en.v:1]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:357]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:371]
-INFO: [Synth 8-6155] done synthesizing module 'mario_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'goombas_display' [E:/works/verilog/kong/mario_brothers/mario/goombas_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'gen_counter_en__parameterized0' [E:/works/verilog/kong/mario_brothers/mario/gen_counter_en.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'gen_counter_en' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/gen_counter_en.v:1]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:357]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:371]
+INFO: [Synth 8-6155] done synthesizing module 'mario_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'goombas_display' [E:/works/hdl/mario_brothers-FPGA/mario/goombas_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gen_counter_en__parameterized0' [E:/works/hdl/mario_brothers-FPGA/mario/gen_counter_en.v:1]
 	Parameter SIZE bound to: 50350000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gen_counter_en__parameterized0' (0#1) [E:/works/verilog/kong/mario_brothers/mario/gen_counter_en.v:1]
-INFO: [Synth 8-6157] synthesizing module 'goomba_display' [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'gen_counter_en__parameterized0' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/gen_counter_en.v:1]
+INFO: [Synth 8-6157] synthesizing module 'goomba_display' [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:2]
 	Parameter GOOMBA_INITIAL_LEFT bound to: 25 - type: integer 
 	Parameter GOOMBA_INITIAL_TOP bound to: 35 - type: integer 
 	Parameter GOOMBA_INITIAL_MOVE bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'goomba_rom' [E:/works/verilog/kong/mario_brothers/mario/goomba_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'goomba_rom' (0#1) [E:/works/verilog/kong/mario_brothers/mario/goomba_rom.v:1]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:59]
-INFO: [Synth 8-6157] synthesizing module 'goomba_bar_ground' [E:/works/verilog/kong/mario_brothers/mario/goomba_bar_ground.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'goomba_bar_ground' (0#1) [E:/works/verilog/kong/mario_brothers/mario/goomba_bar_ground.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'goomba_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:2]
-INFO: [Synth 8-6157] synthesizing module 'goomba_display__parameterized0' [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'goomba_rom' [E:/works/hdl/mario_brothers-FPGA/mario/goomba_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'goomba_rom' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/goomba_rom.v:1]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:59]
+INFO: [Synth 8-6157] synthesizing module 'goomba_bar_ground' [E:/works/hdl/mario_brothers-FPGA/mario/goomba_bar_ground.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'goomba_bar_ground' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/goomba_bar_ground.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'goomba_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'goomba_display__parameterized0' [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:2]
 	Parameter GOOMBA_INITIAL_LEFT bound to: 589 - type: integer 
 	Parameter GOOMBA_INITIAL_TOP bound to: 35 - type: integer 
 	Parameter GOOMBA_INITIAL_MOVE bound to: 0 - type: integer 
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'goomba_display__parameterized0' (0#1) [E:/works/verilog/kong/mario_brothers/mario/goomba_display.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'goombas_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/goombas_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'coin_display' [E:/works/verilog/kong/mario_brothers/mario/coin_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'coin_rom' [E:/works/verilog/kong/mario_brothers/mario/coin_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'coin_rom' (0#1) [E:/works/verilog/kong/mario_brothers/mario/coin_rom.v:1]
-WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (5) of module 'coin_rom' [E:/works/verilog/kong/mario_brothers/mario/coin_display.v:56]
-WARNING: [Synth 8-689] width (9) of port connection 'y' does not match port width (5) of module 'coin_rom' [E:/works/verilog/kong/mario_brothers/mario/coin_display.v:57]
-INFO: [Synth 8-6157] synthesizing module 'random' [E:/works/verilog/kong/mario_brothers/mario/random.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'random' (0#1) [E:/works/verilog/kong/mario_brothers/mario/random.v:1]
-WARNING: [Synth 8-689] width (3) of port connection 'rand_num' does not match port width (4) of module 'random' [E:/works/verilog/kong/mario_brothers/mario/coin_display.v:71]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/coin_display.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'coin_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/coin_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'background_display' [E:/works/verilog/kong/mario_brothers/mario/background_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'background_rom' [E:/works/verilog/kong/mario_brothers/mario/background_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'background_rom' (0#1) [E:/works/verilog/kong/mario_brothers/mario/background_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'background_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/background_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'intro_display' [E:/works/verilog/kong/mario_brothers/mario/intro_display.v:2]
-INFO: [Synth 8-6157] synthesizing module 'intro_rom' [E:/works/verilog/kong/mario_brothers/mario/intro_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'intro_rom' (0#1) [E:/works/verilog/kong/mario_brothers/mario/intro_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'intro_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/intro_display.v:2]
-INFO: [Synth 8-6157] synthesizing module 'game_over_display' [E:/works/verilog/kong/mario_brothers/mario/game_over_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'game_over_rom' [E:/works/verilog/kong/mario_brothers/mario/game_over_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'game_over_rom' (0#1) [E:/works/verilog/kong/mario_brothers/mario/game_over_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'game_over_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/game_over_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ending_display' [E:/works/verilog/kong/mario_brothers/mario/ending_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ending_rom' [E:/works/verilog/kong/mario_brothers/mario/ending_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ending_rom' (0#1) [E:/works/verilog/kong/mario_brothers/mario/ending_rom.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ending_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/ending_display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'text_display' [E:/works/verilog/kong/mario_brothers/mario/text_display.v:1]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/text_display.v:35]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/text_display.v:45]
-INFO: [Synth 8-638] synthesizing module 'font_rom_vhd' [E:/works/verilog/kong/mario_brothers/mario/font_rom.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'font_rom_vhd' (0#1) [E:/works/verilog/kong/mario_brothers/mario/font_rom.vhd:21]
-INFO: [Synth 8-6155] done synthesizing module 'text_display' (0#1) [E:/works/verilog/kong/mario_brothers/mario/text_display.v:1]
-WARNING: [Synth 8-689] width (2) of port connection 'game_st' does not match port width (1) of module 'text_display' [E:/works/verilog/kong/mario_brothers/mario/mario.v:116]
-INFO: [Synth 8-226] default block is never used [E:/works/verilog/kong/mario_brothers/mario/mario.v:135]
-INFO: [Synth 8-6155] done synthesizing module 'mario_brothers' (0#1) [E:/works/verilog/kong/mario_brothers/mario/mario.v:1]
-WARNING: [Synth 8-689] width (16) of port connection 'x' does not match port width (10) of module 'mario_brothers' [E:/works/verilog/kong/mario_brothers/top.v:79]
-WARNING: [Synth 8-689] width (16) of port connection 'y' does not match port width (10) of module 'mario_brothers' [E:/works/verilog/kong/mario_brothers/top.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [E:/works/verilog/kong/mario_brothers/top.v:1]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'goomba_display__parameterized0' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'goombas_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/goombas_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'coin_display' [E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'coin_rom' [E:/works/hdl/mario_brothers-FPGA/mario/coin_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'coin_rom' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/coin_rom.v:1]
+WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (5) of module 'coin_rom' [E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v:56]
+WARNING: [Synth 8-689] width (9) of port connection 'y' does not match port width (5) of module 'coin_rom' [E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v:57]
+INFO: [Synth 8-6157] synthesizing module 'random' [E:/works/hdl/mario_brothers-FPGA/mario/random.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'random' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/random.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'rand_num' does not match port width (4) of module 'random' [E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v:71]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'coin_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_display' [E:/works/hdl/mario_brothers-FPGA/mario/background_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'background_rom' [E:/works/hdl/mario_brothers-FPGA/mario/background_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'background_rom' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/background_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'background_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/background_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'intro_display' [E:/works/hdl/mario_brothers-FPGA/mario/intro_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'intro_rom' [E:/works/hdl/mario_brothers-FPGA/mario/intro_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'intro_rom' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/intro_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'intro_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/intro_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'game_over_display' [E:/works/hdl/mario_brothers-FPGA/mario/game_over_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'game_over_rom' [E:/works/hdl/mario_brothers-FPGA/mario/game_over_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'game_over_rom' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/game_over_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'game_over_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/game_over_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ending_display' [E:/works/hdl/mario_brothers-FPGA/mario/ending_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ending_rom' [E:/works/hdl/mario_brothers-FPGA/mario/ending_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ending_rom' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/ending_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ending_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/ending_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'text_display' [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:1]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:35]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:45]
+INFO: [Synth 8-638] synthesizing module 'font_rom_vhd' [E:/works/hdl/mario_brothers-FPGA/mario/font_rom.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'font_rom_vhd' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/font_rom.vhd:21]
+INFO: [Synth 8-6155] done synthesizing module 'text_display' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/text_display.v:1]
+WARNING: [Synth 8-689] width (2) of port connection 'game_st' does not match port width (1) of module 'text_display' [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:116]
+INFO: [Synth 8-226] default block is never used [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'mario_brothers' (0#1) [E:/works/hdl/mario_brothers-FPGA/mario/mario.v:1]
+WARNING: [Synth 8-689] width (16) of port connection 'x' does not match port width (10) of module 'mario_brothers' [E:/works/hdl/mario_brothers-FPGA/top.v:79]
+WARNING: [Synth 8-689] width (16) of port connection 'y' does not match port width (10) of module 'mario_brothers' [E:/works/hdl/mario_brothers-FPGA/top.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [E:/works/hdl/mario_brothers-FPGA/top.v:1]
 WARNING: [Synth 8-7129] Port clk in module font_rom_vhd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rst in module ending_display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rst in module game_over_display is either unconnected or has no load
@@ -266,61 +268,61 @@ WARNING: [Synth 8-7129] Port hdmi_tx_hpd in module dvi_top is either unconnected
 WARNING: [Synth 8-7129] Port hdmi_tx_scl in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port hdmi_tx_sda in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1573.336 ; gain = 697.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1572.895 ; gain = 698.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1573.336 ; gain = 697.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1572.895 ; gain = 698.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1573.336 ; gain = 697.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1572.895 ; gain = 698.594
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1573.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1572.895 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
-Finished Parsing XDC File [e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
-Parsing XDC File [E:/works/verilog/kong/mario_brothers/top.xdc]
-Finished Parsing XDC File [E:/works/verilog/kong/mario_brothers/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/works/verilog/kong/mario_brothers/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
+Finished Parsing XDC File [e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
+Parsing XDC File [E:/works/hdl/mario_brothers-FPGA/top.xdc]
+Finished Parsing XDC File [E:/works/hdl/mario_brothers-FPGA/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/works/hdl/mario_brothers-FPGA/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/dont_touch.xdc]
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1675.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1668.441 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   MMCME2_BASE => MMCME2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1675.871 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1668.441 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1675.871 ; gain = 800.074
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1668.441 ; gain = 794.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1675.871 ; gain = 800.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1668.441 ; gain = 794.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_125mhz. (constraint file  e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_125mhz. (constraint file  e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_125mhz. (constraint file  e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_125mhz. (constraint file  e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1675.871 ; gain = 800.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1668.441 ; gain = 794.141
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'mario_y_move_state_reg' in module 'mario_display'
 INFO: [Synth 8-802] inferred FSM for state register 'coin_st_reg' in module 'coin_display'
@@ -354,7 +356,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'mario_life_st_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'game_st_reg' using encoding 'sequential' in module 'mario_brothers'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 1675.871 ; gain = 800.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1668.441 ; gain = 794.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -449,7 +451,7 @@ WARNING: [Synth 8-7129] Port hdmi_tx_scl in module top is either unconnected or 
 WARNING: [Synth 8-7129] Port hdmi_tx_sda in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port hdmi_tx_hpd in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:14 . Memory (MB): peak = 1675.871 ; gain = 800.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:41 . Memory (MB): peak = 1668.441 ; gain = 794.141
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 251, Available = 120. Will try to implement using LUT-RAM. 
 ---------------------------------------------------------------------------------
@@ -502,7 +504,6 @@ ROM: Preliminary Mapping Report
 |mario_brothers    | mario_display_inst/mario_rom_standing_inst/color_data | 1024x12       | LUT            | 
 |mario_brothers    | mario_display_inst/mario_rom_jumping_inst/color_data  | 1024x12       | LUT            | 
 |mario_brothers    | coin_display_inst/coin_rom_inst_0/color_data          | 1024x12       | LUT            | 
-|mario_brothers    | intro_display_inst/intro_rom_inst/color_data          | 65536x12      | LUT            | 
 |mario_brothers    | game_over_display_inst/game_over_rom_inst/color_data  | 65536x12      | LUT            | 
 |mario_brothers    | ending_display_inst/ending_rom_inst/color_data        | 65536x12      | LUT            | 
 +------------------+-------------------------------------------------------+---------------+----------------+
@@ -514,13 +515,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:34:17 ; elapsed = 00:37:59 . Memory (MB): peak = 2196.508 ; gain = 1320.711
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:23:23 ; elapsed = 00:24:23 . Memory (MB): peak = 2202.715 ; gain = 1328.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:34:35 ; elapsed = 00:38:18 . Memory (MB): peak = 2196.508 ; gain = 1320.711
+Finished Timing Optimization : Time (s): cpu = 00:23:41 ; elapsed = 00:24:42 . Memory (MB): peak = 2202.715 ; gain = 1328.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -550,7 +551,7 @@ INFO: [Synth 8-7052] The timing for the instance i_3250 (implemented as a Block 
 INFO: [Synth 8-7052] The timing for the instance i_3252 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance i_3254 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:34:50 ; elapsed = 00:38:32 . Memory (MB): peak = 2224.566 ; gain = 1348.770
+Finished Technology Mapping : Time (s): cpu = 00:23:56 ; elapsed = 00:24:58 . Memory (MB): peak = 2240.727 ; gain = 1366.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -568,37 +569,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:34:59 ; elapsed = 00:38:42 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished IO Insertion : Time (s): cpu = 00:24:07 ; elapsed = 00:25:09 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:34:59 ; elapsed = 00:38:42 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished Renaming Generated Instances : Time (s): cpu = 00:24:07 ; elapsed = 00:25:09 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:35:02 ; elapsed = 00:38:45 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:24:10 ; elapsed = 00:25:12 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:35:02 ; elapsed = 00:38:45 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished Renaming Generated Ports : Time (s): cpu = 00:24:10 ; elapsed = 00:25:12 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:35:04 ; elapsed = 00:38:47 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:24:12 ; elapsed = 00:25:14 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:35:04 ; elapsed = 00:38:47 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished Renaming Generated Nets : Time (s): cpu = 00:24:12 ; elapsed = 00:25:15 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -638,27 +639,27 @@ Report Cell Usage:
 |59    |OBUFDS      |     4|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:35:04 ; elapsed = 00:38:47 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Finished Writing Synthesis Report : Time (s): cpu = 00:24:12 ; elapsed = 00:25:15 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:34:41 ; elapsed = 00:38:43 . Memory (MB): peak = 2236.293 ; gain = 1257.961
-Synthesis Optimization Complete : Time (s): cpu = 00:35:05 ; elapsed = 00:38:47 . Memory (MB): peak = 2236.293 ; gain = 1360.496
+Synthesis Optimization Runtime : Time (s): cpu = 00:23:49 ; elapsed = 00:25:09 . Memory (MB): peak = 2254.379 ; gain = 1284.531
+Synthesis Optimization Complete : Time (s): cpu = 00:24:12 ; elapsed = 00:25:15 . Memory (MB): peak = 2254.379 ; gain = 1380.078
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.304 . Memory (MB): peak = 2236.293 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.305 . Memory (MB): peak = 2254.379 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2712 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2252.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2270.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   MMCME2_BASE => MMCME2_ADV: 1 instance 
 
 Synth Design complete | Checksum: a016520b
 INFO: [Common 17-83] Releasing license: Synthesis
-166 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+167 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:35:20 ; elapsed = 00:39:07 . Memory (MB): peak = 2252.652 ; gain = 1755.637
-INFO: [Common 17-1381] The checkpoint 'E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:24:27 ; elapsed = 00:25:42 . Memory (MB): peak = 2270.645 ; gain = 1775.883
+INFO: [Common 17-1381] The checkpoint 'E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 21 13:16:59 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 24 20:13:24 2023...

@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Dec 21 12:37:25 2023
-# Process ID: 34948
-# Current directory: E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1
+# Start of session at: Sun Dec 24 19:47:24 2023
+# Process ID: 20008
+# Current directory: E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/top.vds
-# Journal file: E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1\vivado.jou
+# Log file: E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/top.vds
+# Journal file: E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1\vivado.jou
 # Running On: miikiyoshi, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 4, Host memory: 17128 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

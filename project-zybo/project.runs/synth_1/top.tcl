@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/works/verilog/kong/mario_brothers/project/project.runs/synth_1/top.tcl"
+  variable script "E:/works/hdl/mario_brothers-FPGA/project-zybo/project.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -78,56 +78,57 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/works/verilog/kong/mario_brothers/project/project.cache/wt [current_project]
-set_property parent.project_path E:/works/verilog/kong/mario_brothers/project/project.xpr [current_project]
+set_property webtalk.parent_dir E:/works/hdl/mario_brothers-FPGA/project-zybo/project.cache/wt [current_project]
+set_property parent.project_path E:/works/hdl/mario_brothers-FPGA/project-zybo/project.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/works/verilog/kong/mario_brothers/project/project.cache/ip [current_project]
+set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
+set_property ip_output_repo e:/works/hdl/mario_brothers-FPGA/project-zybo/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  E:/works/verilog/kong/mario_brothers/hdmi/async_reset.v
-  E:/works/verilog/kong/mario_brothers/mario/background_display.v
-  E:/works/verilog/kong/mario_brothers/mario/background_rom.v
-  E:/works/verilog/kong/mario_brothers/mario/coin_display.v
-  E:/works/verilog/kong/mario_brothers/mario/coin_rom.v
-  E:/works/verilog/kong/mario_brothers/debounce.v
-  E:/works/verilog/kong/mario_brothers/hdmi/display_clocks.v
-  E:/works/verilog/kong/mario_brothers/hdmi/display_timings.v
-  E:/works/verilog/kong/mario_brothers/hdmi/dvi_generator.v
-  E:/works/verilog/kong/mario_brothers/hdmi/dvi_top.v
-  E:/works/verilog/kong/mario_brothers/mario/ending_display.v
-  E:/works/verilog/kong/mario_brothers/mario/ending_rom.v
-  E:/works/verilog/kong/mario_brothers/mario/game_over_display.v
-  E:/works/verilog/kong/mario_brothers/mario/game_over_rom.v
-  E:/works/verilog/kong/mario_brothers/mario/gen_counter_en.v
-  E:/works/verilog/kong/mario_brothers/mario/goomba_bar_ground.v
-  E:/works/verilog/kong/mario_brothers/mario/goomba_display.v
-  E:/works/verilog/kong/mario_brothers/mario/goomba_rom.v
-  E:/works/verilog/kong/mario_brothers/mario/goombas_display.v
-  E:/works/verilog/kong/mario_brothers/mario/intro_display.v
-  E:/works/verilog/kong/mario_brothers/mario/intro_rom.v
-  E:/works/verilog/kong/mario_brothers/mario/mario.v
-  E:/works/verilog/kong/mario_brothers/mario/mario_bar_ground.v
-  E:/works/verilog/kong/mario_brothers/mario/mario_display.v
-  E:/works/verilog/kong/mario_brothers/mario/mario_rom_jumping.v
-  E:/works/verilog/kong/mario_brothers/mario/mario_rom_standing.v
-  E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking1.v
-  E:/works/verilog/kong/mario_brothers/mario/mario_rom_walking2.v
-  E:/works/verilog/kong/mario_brothers/mario/random.v
-  E:/works/verilog/kong/mario_brothers/hdmi/serializer_10to1.v
-  E:/works/verilog/kong/mario_brothers/mario/size_varible_gen_count_en.v
-  E:/works/verilog/kong/mario_brothers/mario/text_display.v
-  E:/works/verilog/kong/mario_brothers/hdmi/tmds_encoder_dvi.v
-  E:/works/verilog/kong/mario_brothers/top.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/async_reset.v
+  E:/works/hdl/mario_brothers-FPGA/mario/background_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/background_rom.v
+  E:/works/hdl/mario_brothers-FPGA/mario/coin_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/coin_rom.v
+  E:/works/hdl/mario_brothers-FPGA/debounce.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/display_clocks.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/display_timings.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/dvi_generator.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/dvi_top.v
+  E:/works/hdl/mario_brothers-FPGA/mario/ending_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/ending_rom.v
+  E:/works/hdl/mario_brothers-FPGA/mario/game_over_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/game_over_rom.v
+  E:/works/hdl/mario_brothers-FPGA/mario/gen_counter_en.v
+  E:/works/hdl/mario_brothers-FPGA/mario/goomba_bar_ground.v
+  E:/works/hdl/mario_brothers-FPGA/mario/goomba_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/goomba_rom.v
+  E:/works/hdl/mario_brothers-FPGA/mario/goombas_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/intro_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/intro_rom.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario_bar_ground.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario_display.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_jumping.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_standing.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking1.v
+  E:/works/hdl/mario_brothers-FPGA/mario/mario_rom_walking2.v
+  E:/works/hdl/mario_brothers-FPGA/mario/random.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/serializer_10to1.v
+  E:/works/hdl/mario_brothers-FPGA/mario/size_varible_gen_count_en.v
+  E:/works/hdl/mario_brothers-FPGA/mario/text_display.v
+  E:/works/hdl/mario_brothers-FPGA/hdmi/tmds_encoder_dvi.v
+  E:/works/hdl/mario_brothers-FPGA/top.v
 }
-read_vhdl -library xil_defaultlib E:/works/verilog/kong/mario_brothers/mario/font_rom.vhd
-read_ip -quiet E:/works/verilog/kong/mario_brothers/project/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all e:/works/verilog/kong/mario_brothers/project/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_vhdl -library xil_defaultlib E:/works/hdl/mario_brothers-FPGA/mario/font_rom.vhd
+read_ip -quiet E:/works/hdl/mario_brothers-FPGA/project-zybo/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all e:/works/hdl/mario_brothers-FPGA/project-zybo/project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -138,14 +139,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/works/verilog/kong/mario_brothers/top.xdc
-set_property used_in_implementation false [get_files E:/works/verilog/kong/mario_brothers/top.xdc]
+read_xdc E:/works/hdl/mario_brothers-FPGA/top.xdc
+set_property used_in_implementation false [get_files E:/works/hdl/mario_brothers-FPGA/top.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental E:/works/verilog/kong/mario_brothers/project/project.srcs/utils_1/imports/synth_1/top.dcp
+read_checkpoint -auto_incremental -incremental E:/works/hdl/mario_brothers-FPGA/project-zybo/project.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
