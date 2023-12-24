@@ -1,0 +1,129 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Dec 21 13:19:00 2023
+| Host         : miikiyoshi running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    51 |
+|    Minimum number of control sets                        |    51 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   165 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    51 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |    13 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    24 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             333 |          206 |
+| No           | No                    | Yes                    |             372 |          109 |
+| No           | Yes                   | No                     |             133 |           73 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             458 |          138 |
+| Yes          | Yes                   | No                     |              59 |           18 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|            Clock Signal           |                                 Enable Signal                                 |                                      Set/Reset Signal                                      | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba5_display/goomba_x_move_st_i_2__0_n_0                          |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba1_display/clear                                                |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba4_display/goomba_x_move_st_i_2__1_n_0                          |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba2_display/goomba_x_move_st_i_2__3_n_0                          |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba3_display/goomba_x_move_st_i_2__2_n_0                          |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba6_display/goomba_x_move_st_i_2_n_0                             |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x | debounce_btn0_inst_1/btn_in_d                                                 | debounce_btn0_inst_0/rst                                                                   |                2 |              2 |         1.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/text_display_inst/dig1[3]_i_1_n_0                                       | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                2 |              4 |         2.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/coin_display_inst/reach_coin                                            | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                2 |              4 |         2.00 |
+|  dvi/display_clocks_inst/o_clk_1x | debounce_btn0_inst_0/btn_in_d                                                 | debounce_btn0_inst_0/rst                                                                   |                3 |              4 |         1.33 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/gen_clock_en_inst_0/E[0]                                | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                3 |              6 |         2.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/mario_display_inst/c_left[9]_i_1_n_0                                    | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                3 |              8 |         2.67 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/mario_display_inst/size_varible_gen_counter_en_inst_1/E[0]              | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba6_display/size_varible_gen_counter_en_inst_0/E[0] | mario/goombas_display/goomba6_display/goomba_x_move_st_i_2_n_0                             |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba5_display/size_varible_gen_counter_en_inst_0/E[0] | mario/goombas_display/goomba5_display/goomba_x_move_st_i_2__0_n_0                          |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba3_display/size_varible_gen_counter_en_inst_0/E[0] | mario/goombas_display/goomba3_display/goomba_x_move_st_i_2__2_n_0                          |                5 |             10 |         2.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba2_display/size_varible_gen_counter_en_inst_0/E[0] | mario/goombas_display/goomba2_display/goomba_x_move_st_i_2__3_n_0                          |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba4_display/size_varible_gen_counter_en_inst_0/E[0] | mario/goombas_display/goomba4_display/goomba_x_move_st_i_2__1_n_0                          |                3 |             10 |         3.33 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba1_display/size_varible_gen_counter_en_inst_0/E[0] | mario/goombas_display/goomba1_display/clear                                                |                3 |             10 |         3.33 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/frame_tick                                           | mario/goombas_display/goomba6_display/goomba_x_move_st_i_2_n_0                             |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/frame_tick                                           | mario/goombas_display/goomba1_display/clear                                                |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/frame_tick                                           | mario/goombas_display/goomba4_display/goomba_x_move_st_i_2__1_n_0                          |                3 |             10 |         3.33 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/frame_tick                                           | mario/goombas_display/goomba2_display/goomba_x_move_st_i_2__3_n_0                          |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/frame_tick                                           | mario/goombas_display/goomba3_display/goomba_x_move_st_i_2__2_n_0                          |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/frame_tick                                           | mario/goombas_display/goomba5_display/goomba_x_move_st_i_2__0_n_0                          |                4 |             10 |         2.50 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/coin_display_inst/rand_past                                             | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                4 |             12 |         3.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | dvi/display_timings_inst/SR[0]                                                             |               11 |             12 |         1.09 |
+|  dvi/display_clocks_inst/o_clk_1x | debounce_btn0_inst_1/o[0]_i_1__3_n_0                                          | debounce_btn0_inst_0/rst                                                                   |                4 |             16 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x | debounce_btn0_inst_0/o[0]_i_1__4_n_0                                          | debounce_btn0_inst_0/rst                                                                   |                4 |             16 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | debounce_btn0_inst_0/rst                                                                   |                5 |             18 |         3.60 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | dvi/display_clocks_inst/MMCME2_BASE_inst_0                                                 |               13 |             27 |         2.08 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba4_display/gravity_size_index[31]_i_1__3_n_0       | mario/goombas_display/goomba4_display/goomba_x_move_st_i_2__1_n_0                          |                7 |             32 |         4.57 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba6_display/size_varible_gen_counter_en_inst_0/goomba_rst_reg[5] |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba2_display/gravity_size_index[31]_i_1__1_n_0       | mario/goombas_display/goomba2_display/goomba_x_move_st_i_2__3_n_0                          |                9 |             32 |         3.56 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba3_display/gravity_size_index[31]_i_1__2_n_0       | mario/goombas_display/goomba3_display/goomba_x_move_st_i_2__2_n_0                          |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba5_display/size_varible_gen_counter_en_inst_0/goomba_rst_reg[3] |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba5_display/gravity_size_index[31]_i_1__4_n_0       | mario/goombas_display/goomba5_display/goomba_x_move_st_i_2__0_n_0                          |                7 |             32 |         4.57 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba3_display/size_varible_gen_counter_en_inst_0/goomba_rst_reg[4] |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba6_display/gravity_size_index[31]_i_1__5_n_0       | mario/goombas_display/goomba6_display/goomba_x_move_st_i_2_n_0                             |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba2_display/size_varible_gen_counter_en_inst_0/goomba_rst_reg[2] |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba1_display/size_varible_gen_counter_en_inst_0/goomba_rst_reg[0] |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/mario_display_inst/gravity_size_index[31]_i_1_n_0                       | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                6 |             32 |         5.33 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/mario_display_inst/jump_size_index[31]_i_1_n_0                          | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |                9 |             32 |         3.56 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/goombas_display/goomba4_display/size_varible_gen_counter_en_inst_0/goomba_rst_reg[1] |                8 |             32 |         4.00 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/mario_display_inst/size_varible_gen_counter_en_inst_1/rst0                           |                6 |             32 |         5.33 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/mario_display_inst/size_varible_gen_counter_en_inst_0/rst01_out                      |                7 |             32 |         4.57 |
+|  dvi/display_clocks_inst/o_clk_1x | mario/goombas_display/goomba1_display/gravity_size_index[31]_i_1__0_n_0       | mario/goombas_display/goomba1_display/clear                                                |                7 |             32 |         4.57 |
+|  dvi/display_clocks_inst/o_clk_1x | dvi/display_timings_inst/o_sy_0                                               | dvi/display_clocks_inst/MMCME2_BASE_inst_0                                                 |               18 |             59 |         3.28 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | dvi/display_timings_inst/o_sx[0]_i_1_n_0                                                   |               40 |             77 |         1.92 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               | mario/mario_display_inst/gen_clock_en_inst_0/AR[0]                                         |               40 |            103 |         2.58 |
+|  dvi/display_clocks_inst/o_clk_1x |                                                                               |                                                                                            |              206 |            333 |         1.62 |
++-----------------------------------+-------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,385 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Dec 21 13:20:33 2023
+| Host         : miikiyoshi running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 23
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 16         |
+| TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 5          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_1x_pre and clk_1x_pre_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_1x_pre] -to [get_clocks clk_1x_pre_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_1x_pre_1 and clk_1x_pre are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_1x_pre_1] -to [get_clocks clk_1x_pre]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell debounce_btn0_inst_0/MMCME2_BASE_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) debounce_btn0_inst_1/o_reg[13]/CLR, debounce_btn0_inst_1/o_reg[14]/CLR,
+debounce_btn0_inst_1/o_reg[15]/CLR, debounce_btn0_inst_1/o_reg[1]/CLR,
+debounce_btn0_inst_1/o_reg[2]/CLR, debounce_btn0_inst_1/o_reg[3]/CLR,
+debounce_btn0_inst_1/o_reg[4]/CLR, debounce_btn0_inst_1/o_reg[5]/CLR,
+debounce_btn0_inst_1/o_reg[6]/CLR, debounce_btn0_inst_1/o_reg[7]/CLR,
+debounce_btn0_inst_1/o_reg[8]/CLR, debounce_btn0_inst_1/o_reg[9]/CLR,
+dvi/display_clocks_inst/MMCME2_BASE_inst/RST,
+mario/FSM_sequential_game_st_reg[0]/CLR,
+mario/FSM_sequential_game_st_reg[1]/CLR (the first 15 of 57 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba1_display/goomba_x_move_st_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/goombas_display/goomba1_display/gravity_size_index_reg[25]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[26]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[27]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[28]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[29]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[2]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[30]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[31]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[3]/PRE,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[4]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[5]/PRE,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[6]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[7]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[8]/CLR,
+mario/goombas_display/goomba1_display/gravity_size_index_reg[9]/CLR
+ (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba1_display/size_varible_gen_counter_en_inst_0/o[0]_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+goomba1_display/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba2_display/goomba_x_move_st_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/goombas_display/goomba2_display/gravity_size_index_reg[25]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[26]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[27]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[28]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[29]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[2]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[30]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[31]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[3]/PRE,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[4]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[5]/PRE,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[6]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[7]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[8]/CLR,
+mario/goombas_display/goomba2_display/gravity_size_index_reg[9]/CLR
+ (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba2_display/size_varible_gen_counter_en_inst_0/o[0]_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+goomba2_display/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba3_display/goomba_x_move_st_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/goombas_display/goomba3_display/gravity_size_index_reg[25]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[26]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[27]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[28]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[29]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[2]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[30]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[31]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[3]/PRE,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[4]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[5]/PRE,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[6]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[7]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[8]/CLR,
+mario/goombas_display/goomba3_display/gravity_size_index_reg[9]/CLR
+ (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba3_display/size_varible_gen_counter_en_inst_0/o[0]_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+goomba3_display/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba4_display/goomba_x_move_st_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/goombas_display/goomba4_display/gravity_size_index_reg[25]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[26]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[27]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[28]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[29]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[2]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[30]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[31]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[3]/PRE,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[4]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[5]/PRE,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[6]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[7]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[8]/CLR,
+mario/goombas_display/goomba4_display/gravity_size_index_reg[9]/CLR
+ (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba4_display/size_varible_gen_counter_en_inst_0/o[0]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+goomba4_display/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba5_display/goomba_x_move_st_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/goombas_display/goomba5_display/gravity_size_index_reg[25]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[26]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[27]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[28]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[29]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[2]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[30]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[31]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[3]/PRE,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[4]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[5]/PRE,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[6]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[7]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[8]/CLR,
+mario/goombas_display/goomba5_display/gravity_size_index_reg[9]/CLR
+ (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba5_display/size_varible_gen_counter_en_inst_0/o[0]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+goomba5_display/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba6_display/goomba_x_move_st_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/goombas_display/goomba6_display/gravity_size_index_reg[25]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[26]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[27]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[28]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[29]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[2]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[30]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[31]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[3]/PRE,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[4]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[5]/PRE,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[6]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[7]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[8]/CLR,
+mario/goombas_display/goomba6_display/gravity_size_index_reg[9]/CLR
+ (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell mario/goombas_display/goomba6_display/size_varible_gen_counter_en_inst_0/o[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+goomba6_display/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell mario/mario_display_inst/gen_clock_en_inst_0/mario_y_move_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/mario_display_inst/mario_y_move_state_reg[0]/CLR,
+mario/mario_display_inst/mario_y_move_state_reg[1]/CLR,
+mario/mario_display_inst/walking_1_or_2_reg/CLR,
+mario/text_display_inst/FSM_sequential_mario_life_st_reg[0]/CLR,
+mario/text_display_inst/FSM_sequential_mario_life_st_reg[1]/CLR,
+mario/text_display_inst/dig0_reg[0]/CLR,
+mario/text_display_inst/dig0_reg[1]/CLR,
+mario/text_display_inst/dig0_reg[2]/CLR,
+mario/text_display_inst/dig0_reg[3]/CLR,
+mario/text_display_inst/dig1_reg[0]/CLR,
+mario/text_display_inst/dig1_reg[1]/CLR,
+mario/text_display_inst/dig1_reg[2]/CLR,
+mario/text_display_inst/dig1_reg[3]/CLR,
+mario/text_display_inst/ending_stable_d_reg/CLR,
+mario/text_display_inst/game_over_stable_d_reg/CLR
+ (the first 15 of 191 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o[31]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[25]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[26]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[27]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[28]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[29]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[2]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[30]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[31]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[3]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[4]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[5]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[6]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[7]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[8]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_0/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o[31]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[25]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[26]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[27]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[28]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[29]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[2]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[30]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[31]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[3]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[4]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[5]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[6]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[7]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[8]/CLR,
+mario/mario_display_inst/size_varible_gen_counter_en_inst_1/o_reg[9]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-56#1 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin clk_inst/inst/mmcm_adv_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clkfbout_clk_wiz_0, clkfbout_clk_wiz_0_1
+Related violations: <none>
+
+TIMING-56#2 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin clk_inst/inst/mmcm_adv_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_out1_clk_wiz_0, clk_out1_clk_wiz_0_1
+Related violations: <none>
+
+TIMING-56#3 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin dvi/display_clocks_inst/MMCME2_BASE_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_fb, clk_fb_1
+Related violations: <none>
+
+TIMING-56#4 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin dvi/display_clocks_inst/MMCME2_BASE_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_5x_pre, clk_5x_pre_1
+Related violations: <none>
+
+TIMING-56#5 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin dvi/display_clocks_inst/MMCME2_BASE_inst/CLKOUT1 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_1x_pre, clk_1x_pre_1
+Related violations: <none>
+
+
