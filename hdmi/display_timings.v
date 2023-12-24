@@ -1,3 +1,9 @@
+// Project F: Display Timings
+// (C)2019 Will Green, Open Source Hardware released under the MIT License
+// Learn more at https://projectf.io
+
+// Defaults to 640x480 at 60 Hz
+
 module display_timings #(
     H_RES=640,                      // horizontal resolution (pixels)
     V_RES=480,                      // vertical resolution (lines)

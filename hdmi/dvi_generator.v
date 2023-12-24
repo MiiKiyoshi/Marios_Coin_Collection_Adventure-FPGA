@@ -1,3 +1,7 @@
+// Project F: Display DVI Generator
+// (C)2019 Will Green, Open Source Hardware released under the MIT License
+// Learn more at https://projectf.io
+
 module dvi_generator(
     input  wire i_pix_clk,          // pixel clock
     input  wire i_pix_clk_5x,       // 5 x pixel clock for DDR serialization

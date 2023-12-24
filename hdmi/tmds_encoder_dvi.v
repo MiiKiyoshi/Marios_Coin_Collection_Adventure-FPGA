@@ -1,3 +1,7 @@
+// Project F: Display TMDS Encoder for DVI
+// (C)2019 Will Green, Open source hardware released under the MIT License
+// Learn more at https://projectf.io
+
 module tmds_encoder_dvi(
     input  wire i_clk,          // clock
     input  wire i_rst,          // reset (active high)

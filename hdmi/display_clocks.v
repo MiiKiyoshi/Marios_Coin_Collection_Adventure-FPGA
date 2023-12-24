@@ -1,3 +1,9 @@
+// Project F: Display Clocks
+// (C)2019 Will Green, Open source hardware released under the MIT License
+// Learn more at https://projectf.io
+
+// Defaults to 25.2 and 126 MHz for 640x480 at 60 Hz
+
 module display_clocks #(
     MULT_MASTER=31.5,       // master clock multiplier (2.000-64.000)
     DIV_MASTER=5,           // master clock divider (1-106)

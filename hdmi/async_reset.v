@@ -1,3 +1,7 @@
+// Project F: Async Reset
+// (C)2019 Will Green, Open source hardware released under the MIT License
+// Learn more at https://projectf.io
+
 module async_reset(
     input  wire i_clk,      // clock
     input  wire i_rst,      // reset (active high)

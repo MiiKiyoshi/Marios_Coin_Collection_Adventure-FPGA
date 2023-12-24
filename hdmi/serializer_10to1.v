@@ -1,3 +1,7 @@
+// Project F: Display 10:1 Serializer
+// (C)2019 Will Green, Open source hardware released under the MIT License
+// Learn more at https://projectf.io
+
 module serializer_10to1(
     input  wire i_clk,          // parallel clock
     input  wire i_clk_hs,       // high-speed clock (5 x i_clk when using DDR)
