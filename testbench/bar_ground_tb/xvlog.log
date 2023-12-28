@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb/bar_ground.v" into library work
+INFO: [VRFC 10-311] analyzing module bar_ground
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb/bar_ground_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module bar_ground_tb

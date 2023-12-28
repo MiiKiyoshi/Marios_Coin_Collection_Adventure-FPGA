@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Nov 24 20:07:42 2023
+# Process ID: 13800
+# Current directory: C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb
+# Command line: xsim.exe -source {xsim.dir/bar_ground_tb/xsim_script.tcl}
+# Log file: C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb/xsim.log
+# Journal file: C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb\xsim.jou
+# Running On: MiKiyoshi, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 16518 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/bar_ground_tb/xsim_script.tcl
+open_wave_config {C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb/wcfg/simulate_xsim_bar_ground_tb.wcfg}
+run all
+close_sim

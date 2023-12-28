@@ -1,0 +1,34 @@
+
+
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb/bar_ground.v" into library work
+INFO: [VRFC 10-311] analyzing module bar_ground
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/works/verilog/DigitalSystem/game/testbench/bar_ground_tb/bar_ground_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module bar_ground_tb
+
+
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: G:/TOOLS/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe bar_ground_tb -s bar_ground_tb -debug wave 
+Multi-threading is on. Using 10 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.bar_ground
+Compiling module work.bar_ground_tb
+Built simulation snapshot bar_ground_tb
+
+
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+start_gui
+INFO: [Common 17-206] Exiting xsim at Fri Dec 15 13:25:45 2023...

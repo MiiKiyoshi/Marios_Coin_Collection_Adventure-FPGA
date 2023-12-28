@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simulate_xsim_jump.wdb" id="1">
+         <top_modules>
+            <top_module name="jump" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="105.778824 us"></ZoomStartTime>
+      <ZoomEndTime time="120.623552 us"></ZoomEndTime>
+      <Cursor1Time time="108.942539 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="404"></NameColumnWidth>
+      <ValueColumnWidth column_width="136"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/jump/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/frame_tick" type="logic">
+      <obj_property name="ElementShortName">frame_tick</obj_property>
+      <obj_property name="ObjectShortName">frame_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/up_btn" type="logic">
+      <obj_property name="ElementShortName">up_btn</obj_property>
+      <obj_property name="ObjectShortName">up_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/top" type="array">
+      <obj_property name="ElementShortName">top[9:0]</obj_property>
+      <obj_property name="ObjectShortName">top[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/bottom" type="array">
+      <obj_property name="ElementShortName">bottom[9:0]</obj_property>
+      <obj_property name="ObjectShortName">bottom[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/ground" type="logic">
+      <obj_property name="ElementShortName">ground</obj_property>
+      <obj_property name="ObjectShortName">ground</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/mario_y_move_state" type="array">
+      <obj_property name="ElementShortName">mario_y_move_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mario_y_move_state[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/n_mario_y_move_state" type="array">
+      <obj_property name="ElementShortName">n_mario_y_move_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">n_mario_y_move_state[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/jump_trig" type="logic">
+      <obj_property name="ElementShortName">jump_trig</obj_property>
+      <obj_property name="ObjectShortName">jump_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/gravity_trig" type="logic">
+      <obj_property name="ElementShortName">gravity_trig</obj_property>
+      <obj_property name="ObjectShortName">gravity_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/gravity_trig_always_on" type="logic">
+      <obj_property name="ElementShortName">gravity_trig_always_on</obj_property>
+      <obj_property name="ObjectShortName">gravity_trig_always_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/jump_size" type="array">
+      <obj_property name="ElementShortName">jump_size[31:0]</obj_property>
+      <obj_property name="ObjectShortName">jump_size[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jump/gravity_size" type="array">
+      <obj_property name="ElementShortName">gravity_size[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gravity_size[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

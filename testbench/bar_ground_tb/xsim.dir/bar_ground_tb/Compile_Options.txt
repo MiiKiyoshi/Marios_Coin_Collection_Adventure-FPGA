@@ -1,0 +1,1 @@
+"bar_ground_tb" -s "bar_ground_tb" -debug "wave" 

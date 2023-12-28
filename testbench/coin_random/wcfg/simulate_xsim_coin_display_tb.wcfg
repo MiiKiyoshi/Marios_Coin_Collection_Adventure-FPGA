@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simulate_xsim_coin_display_tb.wdb" id="1">
+         <top_modules>
+            <top_module name="coin_display_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="10.105001 us"></ZoomEndTime>
+      <Cursor1Time time="5.298759 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="258"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/n_coin_st" type="array">
+      <obj_property name="ElementShortName">n_coin_st[1:0]</obj_property>
+      <obj_property name="ObjectShortName">n_coin_st[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/left" type="array">
+      <obj_property name="ElementShortName">left[9:0]</obj_property>
+      <obj_property name="ObjectShortName">left[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/top" type="array">
+      <obj_property name="ElementShortName">top[9:0]</obj_property>
+      <obj_property name="ObjectShortName">top[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/coin_st" type="array">
+      <obj_property name="ElementShortName">coin_st[1:0]</obj_property>
+      <obj_property name="ObjectShortName">coin_st[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/reach_coin" type="logic">
+      <obj_property name="ElementShortName">reach_coin</obj_property>
+      <obj_property name="ObjectShortName">reach_coin</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/rand_past" type="array">
+      <obj_property name="ElementShortName">rand_past[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rand_past[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/rand_ff" type="array">
+      <obj_property name="ElementShortName">rand_ff[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rand_ff[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/rand_num" type="array">
+      <obj_property name="ElementShortName">rand_num[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rand_num[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/coin_display_tb/coin_display_inst/random_not_match" type="logic">
+      <obj_property name="ElementShortName">random_not_match</obj_property>
+      <obj_property name="ObjectShortName">random_not_match</obj_property>
+   </wvobject>
+</wave_config>

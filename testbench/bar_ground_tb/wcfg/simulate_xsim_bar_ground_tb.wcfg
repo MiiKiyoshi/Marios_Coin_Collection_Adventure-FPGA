@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simulate_xsim_bar_ground_tb.wdb" id="1">
+         <top_modules>
+            <top_module name="bar_ground_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="307.210001 us"></ZoomEndTime>
+      <Cursor1Time time="196.287693 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="450"></NameColumnWidth>
+      <ValueColumnWidth column_width="200"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="43" />
+   <wvobject fp_name="/bar_ground_tb/mario_x" type="array">
+      <obj_property name="ElementShortName">mario_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mario_x[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/mario_y" type="array">
+      <obj_property name="ElementShortName">mario_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mario_y[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/ground" type="logic">
+      <obj_property name="ElementShortName">ground</obj_property>
+      <obj_property name="ObjectShortName">ground</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/ground" type="logic">
+      <obj_property name="ElementShortName">ground</obj_property>
+      <obj_property name="ObjectShortName">ground</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/mario_x" type="array">
+      <obj_property name="ElementShortName">mario_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mario_x[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/mario_y" type="array">
+      <obj_property name="ElementShortName">mario_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mario_y[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/left" type="array">
+      <obj_property name="ElementShortName">left[9:0]</obj_property>
+      <obj_property name="ObjectShortName">left[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/right" type="array">
+      <obj_property name="ElementShortName">right[9:0]</obj_property>
+      <obj_property name="ObjectShortName">right[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/top" type="array">
+      <obj_property name="ElementShortName">top[9:0]</obj_property>
+      <obj_property name="ObjectShortName">top[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bottom" type="array">
+      <obj_property name="ElementShortName">bottom[9:0]</obj_property>
+      <obj_property name="ObjectShortName">bottom[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/real_ground" type="logic">
+      <obj_property name="ElementShortName">real_ground</obj_property>
+      <obj_property name="ObjectShortName">real_ground</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_top_left" type="logic">
+      <obj_property name="ElementShortName">bar_top_left</obj_property>
+      <obj_property name="ObjectShortName">bar_top_left</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_top_right" type="logic">
+      <obj_property name="ElementShortName">bar_top_right</obj_property>
+      <obj_property name="ObjectShortName">bar_top_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_mid_left" type="logic">
+      <obj_property name="ElementShortName">bar_mid_left</obj_property>
+      <obj_property name="ObjectShortName">bar_mid_left</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_mid_mid" type="logic">
+      <obj_property name="ElementShortName">bar_mid_mid</obj_property>
+      <obj_property name="ObjectShortName">bar_mid_mid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_mid_right" type="logic">
+      <obj_property name="ElementShortName">bar_mid_right</obj_property>
+      <obj_property name="ObjectShortName">bar_mid_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_bottom_left" type="logic">
+      <obj_property name="ElementShortName">bar_bottom_left</obj_property>
+      <obj_property name="ObjectShortName">bar_bottom_left</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/bar_bottom_right" type="logic">
+      <obj_property name="ElementShortName">bar_bottom_right</obj_property>
+      <obj_property name="ObjectShortName">bar_bottom_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/RIGHT_END" type="array">
+      <obj_property name="ElementShortName">RIGHT_END[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RIGHT_END[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BOTTOM_END" type="array">
+      <obj_property name="ElementShortName">BOTTOM_END[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BOTTOM_END[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/WIDTH" type="array">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/HEIGHT" type="array">
+      <obj_property name="ElementShortName">HEIGHT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HEIGHT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_TOP_LEFT_left" type="array">
+      <obj_property name="ElementShortName">BAR_TOP_LEFT_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_TOP_LEFT_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_TOP_LEFT_right" type="array">
+      <obj_property name="ElementShortName">BAR_TOP_LEFT_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_TOP_LEFT_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_TOP_LEFT_high" type="array">
+      <obj_property name="ElementShortName">BAR_TOP_LEFT_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_TOP_LEFT_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_TOP_RIGHT_left" type="array">
+      <obj_property name="ElementShortName">BAR_TOP_RIGHT_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_TOP_RIGHT_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_TOP_RIGHT_right" type="array">
+      <obj_property name="ElementShortName">BAR_TOP_RIGHT_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_TOP_RIGHT_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_TOP_RIGHT_high" type="array">
+      <obj_property name="ElementShortName">BAR_TOP_RIGHT_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_TOP_RIGHT_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_LEFT_left" type="array">
+      <obj_property name="ElementShortName">BAR_MID_LEFT_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_LEFT_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_LEFT_right" type="array">
+      <obj_property name="ElementShortName">BAR_MID_LEFT_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_LEFT_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_LEFT_high" type="array">
+      <obj_property name="ElementShortName">BAR_MID_LEFT_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_LEFT_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_MID_left" type="array">
+      <obj_property name="ElementShortName">BAR_MID_MID_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_MID_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_MID_right" type="array">
+      <obj_property name="ElementShortName">BAR_MID_MID_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_MID_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_MID_high" type="array">
+      <obj_property name="ElementShortName">BAR_MID_MID_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_MID_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_RIGHT_left" type="array">
+      <obj_property name="ElementShortName">BAR_MID_RIGHT_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_RIGHT_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_RIGHT_right" type="array">
+      <obj_property name="ElementShortName">BAR_MID_RIGHT_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_RIGHT_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_MID_RIGHT_high" type="array">
+      <obj_property name="ElementShortName">BAR_MID_RIGHT_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_MID_RIGHT_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_BOTTOM_LEFT_left" type="array">
+      <obj_property name="ElementShortName">BAR_BOTTOM_LEFT_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_BOTTOM_LEFT_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_BOTTOM_LEFT_right" type="array">
+      <obj_property name="ElementShortName">BAR_BOTTOM_LEFT_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_BOTTOM_LEFT_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_BOTTOM_LEFT_high" type="array">
+      <obj_property name="ElementShortName">BAR_BOTTOM_LEFT_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_BOTTOM_LEFT_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_BOTTOM_RIGHT_left" type="array">
+      <obj_property name="ElementShortName">BAR_BOTTOM_RIGHT_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_BOTTOM_RIGHT_left[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_BOTTOM_RIGHT_right" type="array">
+      <obj_property name="ElementShortName">BAR_BOTTOM_RIGHT_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_BOTTOM_RIGHT_right[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bar_ground_tb/uut/BAR_BOTTOM_RIGHT_high" type="array">
+      <obj_property name="ElementShortName">BAR_BOTTOM_RIGHT_high[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAR_BOTTOM_RIGHT_high[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
